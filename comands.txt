@@ -1,0 +1,145 @@
+docker-compose ps -a  // to check all containers in dockers
+docker exec -it CONTAINER_NAME npm install // to install pakeges in docker any container
+docker stop CONTAINER_NAME //to stop particuler container in docker
+docker rm CONTAINER_NAME // top remove container from docker
+docker logs CONTAINER_NAME // to check do not use compose while looking logs
+docker-compose down // to remove the docker images and (-v) for removeing all the data bases tooo
+docker-compose up -d // to run docker and make images with also you can see the logs by removeing (-d) from comand
+
+
+
+
+linix lectures commands
+which SOFTWARE_NAME // to check the software is installed or not yet
+cat /etc/os-release // to check os-system details
+yum update -y //to update linix all softwares
+
+
+linix install git on ec2
+sudo su // to make you as root user to get all access
+yum update -y // to update all your pakeges in your ec2 on your first time
+yum instal git -y // basic comand to instal git in your linix
+git --version // to check git installed or not yet
+git config --global user.name 'USER_NAME' // to set who your are on git on first time
+git config --global user.email 'EMAIL_ADDRESS' // to set your email account where is your git installed
+which git // to check where is your git installed.
+
+
+
+ubanto lectures commands
+apt-get update // to update all softwer in ubanto
+
+
+enabling fire wall on server 
+sudo ufw status // to check status of fire wal which will show you inaction
+sudo ufw enable // with will change the status by pressing y then enter
+sudo ufw status // then it will show you active
+sudo ufw allow ssh // to activate  ssh on server
+sudo ufw allow 'Nginx Full' // to allow all posible ports on server
+sudo ufw status // to check ports on server
+sudo ufw allow 3000 // to enable port 3000 on server but its not good on 
+sudo ufw deny 3000 // to disable port on server 
+
+
+instling ssl to linix server
+sudo add-apt-repository ppa:certbot/certbot // to add certbot in you linx then press ENTER
+sudo apt install python3-certbot-nginx // then install python on your web server then press Y
+                                       make sure you have enable your fire wall on your web server
+sudo certbot --nginx -d test.dex.globalfansy.com -d www.test.dex.globalfansy.com // now you can install ssl vertificatino on you web server 
+                                 after that add your email address to get email on expiration date
+becarefull will entring the detail after your email address and every time choose second option
+
+
+
+git lectures* **********
+git stash save -u "COMMENT FOR BACKUP NAMING" // to stashing to comment for some time in local git
+git stash list  // to see all local stash data
+git checkout BRANCH_NAME  // to chekcout any other brach if your are making first time the wirte (-b) with it
+git stash apply // to apply stash changes on next branch
+git stash pop // to remove all stash comments on local branch
+git stash apply stash@{6} // to apply pariticuler stash
+
+
+
+
+nginx resting and checking status
+sudo systemctl restart nginx // to restart engine
+sudo systemctl status nginx // to check status of engin
+
+
+
+
+
+docker lectures 
+docker --version // to check docker version also you can check by == docker -v
+docker status // to check docker status that is runing or not yet
+docker info // to check docker information more then its runing or not
+service docker status // to check docker is runing or not on ubanto
+yum install docker -y // to install docker on linix 
+service docker start // to start the docker linx
+service docker stop // to stop the docker in linix
+docker images // to see docker containers
+docker search CONTAINER_NAME // to see images on docker hub site in details
+docker pull IMAGES_NAME // to download any images in docker form docker hub but it will not run on os
+docker run -it --name CONTAINER_NAME CONTAINER_TYPE /bin/bash // to download images for container and run in same camand also Note(bash is here for showing terminal in linix)
+docker start CONTAINER_NAME // to start particuler container
+exit // to exit form any container
+docker attach CONTAINER_NAME // to getinto container to work on it 
+docker ps -a // to see all container (ps = process status and -a = to all container) only ps will give you runing container status
+docker stop CONTAINER_NAME // to stop particuler container
+docker rm CONTAINER_NAME // to stop remove container
+docker diff CONTAINER_NAME // to see container diffrence in docker container and os
+docker container inspect // to check all information related to container
+
+
+docker volume lectures
+docker volume ls // to check all the volumes in docker
+docker volume create VOLUME_NAME //to create volume in docker 
+docker volume rm VOLUME_NAME //to remove volume in docker 
+docker volume prune //to remove those volume who are not in use (importent)
+docker system prune //to remove all docker unwantend data
+docker volume inspect // to check all information related to volume
+
+
+
+docker posts lectures
+docker run -td --name CONTAINER_NAME -p 80:80 OS_NAME //to create container and enable ports and also conect 80 port with linix machine
+docker port CONTAINER_NAME //to check port enable ports on container
+
+
+
+git lectures
+******************************************
+git add . // to add files to comment 
+git commit -m "COMMENT_MESSAGE" //to add comment in git 
+
+git reset // to remove all added files with (git add .) in local repo
+git revert "COMMENT_ID" //this will make new comment with having all files which having at "COMMENT_ID"
+
+git stash save -u "COMMENT FOR BACKUP NAMING" // to stashing to comment for some time in local git
+git stash list  // to see all local stash data
+git checkout BRANCH_NAME  // to chekcout any other brach if your are making first time the wirte (-b) with it
+git stash apply // to apply stash changes on next branch
+git stash pop // to remove all stash comments on local branch
+
+git stash apply stash@{6} // to apply pariticuler stash
+git clean -n // to check untracked files not to remove them
+git clean -f // to remove all untracked files in git which are new one
+git clean -f ./filepath/filename.js // to remove particuler file in git traking just type file path after -f
+
+git log --oneline // to show all comments in one line 
+git tag // to check all tags with there comments
+git tag -a "TAG_NAME" -m "TAG_MESSAGE" "COMMENT_ID" // to giving tags to comments
+git show "TAG_NAME" // to get all details in tag history your can also use tab to write full name
+git tag -d "TAG_NAME // to remove git tag
+
+
+
+
+
+
+
+
+
+
+
