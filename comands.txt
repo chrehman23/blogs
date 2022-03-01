@@ -133,6 +133,8 @@ git tag -a "TAG_NAME" -m "TAG_MESSAGE" "COMMENT_ID" // to giving tags to comment
 git show "TAG_NAME" // to get all details in tag history your can also use tab to write full name
 git tag -d "TAG_NAME // to remove git tag
 
+git commit . -m 'quick fix' --no-verify //if added pre-commit in git folder then add --no-verify to not to run those commites
+
 
 
 
