@@ -1,0 +1,10 @@
+ubanto login detials
+user name : chrehman
+passowrd  : chrehman
+
+giving user root permissions in windows ubanto 
+sudo chown -R $USER: .
+
+
+to remove folders or files 
+sudo rm -r folderName/fileNmae
