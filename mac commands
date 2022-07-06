@@ -2,6 +2,8 @@ is no basic commands are not runing on mac os run this command
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin"
 
+https://stackoverflow.com/questions/69875462/installing-anchor-on-a-macos-anchor-versions-are-not-matching-up
+
 
 If you are using MacOS to install Anchor
 
