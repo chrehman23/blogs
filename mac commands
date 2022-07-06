@@ -1,0 +1,3 @@
+is no basic commands are not runing on mac os run this command 
+
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin"
