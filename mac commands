@@ -1,3 +1,17 @@
 is no basic commands are not runing on mac os run this command 
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin"
+
+
+If you are using MacOS to install Anchor
+
+Install Solana
+sh -c "$(curl -sSfL https://release.solana.com/v1.8.0/install)"
+Install Yarn
+npm install -g yarn
+Install Rust Cargo
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+Install Anchor by building the Rust project from Github and then installing the dependencies
+cargo install --git https://github.com/project-serum/anchor --tag v0.18.0 anchor-cli --locked
+npm install -g @project-serum/anchor
+
