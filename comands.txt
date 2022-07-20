@@ -114,6 +114,9 @@ git lectures
 git add . // to add files to comment 
 git commit -m "COMMENT_MESSAGE" //to add comment in git 
 
+git branch -D BRANCH_NAME // To remove branch from local
+git reflog //To recover any code.
+
 git reset // to remove all added files with (git add .) in local repo
 git revert "COMMENT_ID" //this will make new comment with having all files which having at "COMMENT_ID"
 
