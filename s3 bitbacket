@@ -8,10 +8,32 @@ bucket public access
             "Effect": "Allow",
             "Principal": "*",
             "Action": "s3:GetObject",
-            "Resource": "arn:aws:s3:::NameOFBucket/*"
+            "Resource": "arn:aws:s3:::BACKET_NAME/*"
         }
     ]
 }
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": [
+                "s3:GetObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::BACKET_NAME/*"
+            ]
+        }
+    ]
+}
+
+you can use any both of them
+
+
+
 
 bucket origin issue
 
@@ -44,3 +66,69 @@ artifacts:
   base-directory: build
   
   ************************************************
+  
+ Aws IAM privacy policy json format  gose here
+ 
+ {
+	"Version": "2012-10-17",
+	"Statement": [
+    	    {
+              "Sid": "AllowS3SyncCommand",
+        	  "Effect": "Allow",
+        	  "Action": [
+                  "s3:GetObject",
+                  "s3:Listbucket",
+                  "s3:PutObject"
+              ],
+        	  "Resource": [
+		      "arn:aws:s3:::BACKET_NAME",
+                  "arn:aws:s3:::BACKET_NAME/*"
+              ]
+    	    }
+	]
+}
+
+*****************************************
+
+mkdir -p .github/workflows
+touch .github/workflows/main.yml
+
+
+name: Upload Website
+
+on:
+ push:
+   branches:
+     - main
+
+jobs:
+ Deploy:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Checkout
+       uses: actions/checkout@v2
+
+     - name: Setup node
+       uses: actions/setup-node@v2
+
+     - name: Install dependencies
+       run: npm install
+
+     - name: Build static file
+       run: npm run build
+
+     - name: Configure AWS Credentials
+       uses: aws-actions/configure-aws-credentials@v1
+       with:
+         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+         aws-region: us-east-1
+
+     - name: Deploy static site to S3 bucket
+       run: aws s3 sync ./build s3://{bucket_name}
+       
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+https://docs.google.com/document/d/1jpT_pVYPxKvl9g8ArXoDBP32vAM2zMz8kRqtZ7vIZNQ/edit#
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
