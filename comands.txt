@@ -60,6 +60,8 @@ git stash pop // to remove all stash comments on local branch
 git stash apply stash@{6} // to apply pariticuler stash
 git rm --cached filename //to update git change on live server and local server
 
+git rm -r --cached . //to use reset gitignore hisotry and update its file on live server too
+
 
 
 
