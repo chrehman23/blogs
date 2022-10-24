@@ -1,2 +1,2 @@
 mogose server db connection details 
-mongodb://USER_NAME:PASSWORD@URL_CONNECITON:27017/?authSource=admin
+mongodb://USER_NAME:PASSWORD@URL_CONNECITON:27017/DB_NAME?authSource=admin
