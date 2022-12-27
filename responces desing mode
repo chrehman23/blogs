@@ -1,0 +1,55 @@
+ <div className="checkImageFixed">
+        {img && (
+          <img
+            src={image.src}
+            className="w-100"
+            style={{ opacity: opt, top: `${up}px` }}
+            alt=""
+          />
+        )}
+        <div>
+          <button onClick={page}>
+            Show {opt} {up}
+          </button>
+          <button onClick={() => updateOtp("+")}>+ </button>
+          <button onClick={() => updateOtp("")}>-</button>
+          <input
+            type="text"
+            placeholder="Enter px"
+            onChange={(event) => setInput(event.target.value)}
+          />
+          <button onClick={() => upDown("up")}>Up</button>
+          <button onClick={() => upDown("")}>down</button>
+        </div>
+      </div>
+      
+      
+      let [img, setImages] = useState(false);
+  let [up, setUp] = useState(0);
+  let [opt, setOpt] = useState(1);
+  let [input, setInput] = useState(0);
+  let page = () => {
+    setImages(!img);
+  };
+  let updateOtp = (check) => {
+    if (check == "+") {
+      setOpt((+opt + 0.1).toFixed(1));
+    } else {
+      setOpt((+opt - 0.1).toFixed(1));
+    }
+  };
+  let upDown = (check) => {
+    if (input) {
+      if (check == "up") {
+        setUp((+input + +up).toFixed(1));
+      } else {
+        setUp((+up - +input).toFixed(1));
+      }
+    } else {
+      if (check == "up") {
+        setUp((+up + 1).toFixed(1));
+      } else {
+        setUp((+up - 1).toFixed(1));
+      }
+    }
+  };
