@@ -62,6 +62,8 @@ git rm --cached filename //to update git change on live server and local server
 
 git rm -r --cached . //to use reset gitignore hisotry and update its file on live server too
 
+GIT_SSH_COMMAND="ssh -i ~/.ssh/personal" git push origin master //for custom ssh key picking
+
 
 
 
