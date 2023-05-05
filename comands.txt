@@ -163,6 +163,28 @@ PreferredAuthentications publickey
 IdentityFile ~/.ssh/id_ed25519_asad
 
 ***************************************************
+Head back over to the SSH config file at ~/.ssh and amend accordingly to:
+
+
+Host smartchain
+    HostName github.com
+    User git
+    IdentityFile  ~/.ssh/smartchain
+    IdentitiesOnly yes
+
+Host personal
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/personal
+    IdentitiesOnly yes
+    
+    
+    
+    
+///// github multi pull account 
+Note:  just while cloneing repo replace your heading name with github.com before your user name
+
+**************************************************************
 
 
 
