@@ -1,0 +1,23 @@
+local email setup for testing
+
+https://gist.github.com/0-Sony/81ae32505a4a832b456a6c28b46c056e
+
+INSTALL MAILHOG
+brew install mailhog
+
+then run
+brew services start mailhog
+
+env.local file variables
+
+MAIL_HOST=localhost
+MAIL_PORT=1025
+MAIL_USERNAME=null
+MAIL_PASSWORD=null
+MAIL_FROM_ADDRESS=email@gmail.com
+MAIL_FROM_NAME=Company Name
+
+
+Then you can find your all email here.
+
+http://localhost:8025
