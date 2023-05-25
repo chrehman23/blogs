@@ -1,0 +1,8 @@
+Create a directory where you will store your backups:
+    mkdir -p ~/mongo/backups
+Schedule a regular backup to run every midnight (or at a different time if you so desire) using a cronjob with 
+
+commands
+
+    mongodump //to take backup in folder 
+    0 0 * * * mongodump --gzip --archive=~/mongo/backups/backup.gz. //to take every night backup
