@@ -1,0 +1,54 @@
+******************install git on ubanto*****************
+
+sudo apt update  //on new server only
+sudo apt install git // built in commands to install git
+Note:
+Ubuntu/Debian: sudo apt install git
+CentOS/Fedora: sudo dnf install git or sudo yum install git
+
+***********************add ssh key ********************
+ ssh-keygen -t ed25519 -C "your_email@example.com" //key genrate
+ eval "$(ssh-agent -s)"  //add it to agent this is show agent pid with its id
+ 
+ *********************install node js ************************
+ sudo apt install nodejs // make sure you have to install node js before to install pm2 in you server
+ sudo apt install npm /// you have to install npm also for your node js like projects
+ 
+ 
+ ***************pm2 installation for global *******************
+ sudo npm install -g pm2
+ 
+ 
+ **************** install nginx ****************
+ sudo apt install nginx //on firtst time 
+ sudo service nginx start // to start it 
+ sudo service nginx restart // to restart it
+ cd /etc/nginx/nginx.conf // go to this folder
+ ********************************************************************
+ Test the Nginx configuration for any syntax errors:
+sudo nginx -t
+ ******************************************************************
+ // redirect file code 
+**************************************************************
+ events {
+        worker_connections 1024;
+}
+
+http {
+    server {
+        listen 80;
+        server_name developer-host.aqarchain.io www.developer-host.aqarchain.io;
+        location / {
+             proxy_pass http://localhost:8090;
+             proxy_set_header Host $host;
+        }
+    }
+}
+
+Note : This is only for single redirec file.
+
+Note : To excit file (press ESC 3 times , shift ; , :wq)
+************************************************************************
+
+ 
+ 
