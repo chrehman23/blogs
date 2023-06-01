@@ -1,0 +1,13 @@
+basic configratin files
+
+server {
+    listen 80;
+    server_name example.com;  # Your domain name
+
+    location / {
+        proxy_pass http://localhost:3000;  # Your Express.js server address
+        proxy_set_header Host $host;  # to send directly fully host name to other api if we are calling api from server
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    }
+}
