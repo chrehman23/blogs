@@ -1,2 +1,9 @@
 https://www.youtube.com/watch?v=X3F3El_yvFg  //CI CD for react app with ssl and server configration setup
 https://www.youtube.com/watch?v=79Nu8Vc-VX0  //for react seo 
+
+
+//test matic transfer websites
+https://mumbaifaucet.com/
+https://testmatic.vercel.app/
+https://faucet.polygon.technology/
+https://faucet.quicknode.com/polygon/mumbai
