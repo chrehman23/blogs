@@ -18,3 +18,7 @@ http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Abdur%20Rehman
 
 //To debug transaction hash on any chain
 https://tenderly.co
+
+
+//blockchain developer road map
+https://coggle.it/diagram/YCzP1lR6dWF3jfas/t/ethereum-smart-contract-engineer-2021
