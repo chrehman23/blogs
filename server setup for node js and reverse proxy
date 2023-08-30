@@ -1,6 +1,7 @@
 ******************install git on ubanto*****************
 
 sudo apt update  //on new server only
+sudo apt update && sudo apt upgrade //to update both
 sudo apt install git // built in commands to install git
 Note:
 Ubuntu/Debian: sudo apt install git
