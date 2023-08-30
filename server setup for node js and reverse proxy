@@ -13,6 +13,10 @@ git --version // to check git installed or not
 shift + :
 then wq thne press enter
 
+**********remvoving yarn packeage **************
+sudo apt remove cmdtest //to remove yarn package
+sudo npm install -g yarn //you can add yarn with npm ager adding npm
+
 ***********************add ssh key ********************
  ssh-keygen -t ed25519 -C "your_email@example.com" //key genrate
  eval "$(ssh-agent -s)"  //add it to agent this is show agent pid with its id
