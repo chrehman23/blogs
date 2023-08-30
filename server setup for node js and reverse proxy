@@ -11,9 +11,8 @@ git --version // to check git installed or not
 
 
 ************* vim  editor*******************
-shift + :
-then wq thne press enter
-
+press i for edit mode and esc for excit mode then wq thne press enter
+shift + :wq
 **********remvoving yarn packeage **************
 sudo apt remove cmdtest //to remove yarn package
 sudo npm install -g yarn //you can add yarn with npm ager adding npm
@@ -29,17 +28,17 @@ sudo apt-get remove nodejs //to remove nodejs
 sudo apt-get purge nodejs //to remove nodejs
 sudo apt-get autoremove // to clean all after removing the package form ubanto
  
+***************pm2 installation for global *******************
+sudo npm install -g pm2 //download pm2
+pm2 start npm --name "host" -- run dev //to run npm comand form pm2
  
- ***************pm2 installation for global *******************
- sudo npm install -g pm2
  
- 
- **************** install nginx ****************
- sudo apt install nginx //on firtst time 
- sudo service nginx start // to start it 
- sudo service nginx restart // to restart it
- cd /etc/nginx/nginx.conf // go to this folder
- ********************************************************************
+**************** install nginx ****************
+sudo apt install nginx //on firtst time 
+sudo service nginx start // to start it 
+sudo service nginx restart // to restart it
+cd /etc/nginx/nginx.conf // go to this folder
+********************************************************************
  Test the Nginx configuration for any syntax errors:
 sudo nginx -t
  ******************************************************************
