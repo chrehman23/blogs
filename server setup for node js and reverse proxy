@@ -8,6 +8,11 @@ CentOS/Fedora: sudo dnf install git or sudo yum install git
 
 git --version // to check git installed or not 
 
+
+************* vim  editor*******************
+shift + :
+then wq thne press enter
+
 ***********************add ssh key ********************
  ssh-keygen -t ed25519 -C "your_email@example.com" //key genrate
  eval "$(ssh-agent -s)"  //add it to agent this is show agent pid with its id
