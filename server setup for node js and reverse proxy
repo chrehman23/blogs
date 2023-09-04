@@ -39,6 +39,8 @@ sudo apt install nginx //on firtst time
 sudo service nginx start // to start it 
 sudo service nginx restart // to restart it
 cd /etc/nginx/nginx.conf // go to this folder
+cd sites-enabled //linking
+sudo ln -s ../sites-available/FILE_NAME //linking file
 ********************************************************************
  Test the Nginx configuration for any syntax errors:
 sudo nginx -t
@@ -63,6 +65,28 @@ http {
 Note : This is only for single redirec file.
 
 Note : To excit file (press ESC 3 times , shift ; , :wq)
+************************************************************************
+
+server {
+
+listen 80;
+
+  server_name *.aqarchain.io;
+
+  location / {
+    client_max_body_size    100M;
+    proxy_pass              http://127.0.0.1:3001;
+    proxy_http_version      1.1;
+    proxy_set_header        Upgrade $http_upgrade;
+    proxy_set_header        Connection 'upgrade';
+    proxy_set_header        Host $host;
+    proxy_cache_bypass      $http_upgrade;
+  }
+
+  access_log /var/log/nginx/dev-host.aqarchain.io.access.log;
+  error_log /var/log/nginx/dev-host.aqarchain.io.error.log;
+}
+
 ************************************************************************
 
  
