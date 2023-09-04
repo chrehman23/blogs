@@ -22,6 +22,7 @@ sudo npm install -g yarn //you can add yarn with npm ager adding npm
  eval "$(ssh-agent -s)"  //add it to agent this is show agent pid with its id
  
  *********************install node js ************************
+curl -s https://deb.nodesource.com/setup_16.x | sudo bash // Ubuntu 20.04 installation
 sudo apt install nodejs -y // make sure you have to install node js before to install pm2 in you serve
 sudo apt install npm /// you have to install npm also for your node js like projects
 sudo apt-get remove nodejs //to remove nodejs
