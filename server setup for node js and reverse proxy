@@ -1,5 +1,5 @@
 
-Login to server with ssh key
+******************Login to server with ssh key******************
 
 chmod 600 fileNmae.key // this will give read access to file.
 ssh root@serverIp -i privateKey.key
