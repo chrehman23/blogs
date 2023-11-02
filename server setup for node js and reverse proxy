@@ -1,3 +1,8 @@
+
+Login to server with ssh key
+
+chmod 600 fileNmae.key // this will give read access to file.
+ssh root@serverIp -i privateKey.key
 ******************install git on ubanto*****************
 
 sudo apt update  //on new server only
