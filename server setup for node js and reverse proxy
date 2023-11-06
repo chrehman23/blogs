@@ -3,6 +3,11 @@
 
 chmod 600 fileNmae.key // this will give read access to file.
 ssh root@serverIp -i privateKey.key
+******************transfer files and upload files server to local or local to server *****************
+sudo apt install zip unzip //install zip and unzip on you server.
+pwd // this will give you root path of file or folder.
+
+
 ******************install git on ubanto*****************
 
 sudo apt update  //on new server only
