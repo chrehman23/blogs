@@ -22,3 +22,6 @@ https://tenderly.co
 
 //blockchain developer road map
 https://coggle.it/diagram/YCzP1lR6dWF3jfas/t/ethereum-smart-contract-engineer-2021
+
+//install nvm
+https://github.com/nvm-sh/nvm
