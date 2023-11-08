@@ -124,7 +124,7 @@ git reflog //To recover any code.
 git reset // to remove all added files with (git add .) in local repo
 git revert "COMMENT_ID" //this will make new comment with having all files which having at "COMMENT_ID"
 
-git stash save -u "COMMENT FOR BACKUP NAMING" // to stashing to comment for some time in local git
+git stash save -u "COMMENT FOR BACKUP NAMING" // to stashing to comment for some time in local git and -u will also add untract files
 git stash list  // to see all local stash data
 git checkout BRANCH_NAME  // to chekcout any other brach if your are making first time the wirte (-b) with it
 git stash apply // to apply stash changes on next branch
