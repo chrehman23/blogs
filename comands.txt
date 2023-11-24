@@ -14,6 +14,12 @@ which SOFTWARE_NAME // to check the software is installed or not yet
 cat /etc/os-release // to check os-system details
 yum update -y //to update linix all softwares
 
+time sone on linix
+sudo timedatectl set-timezone <desired timezone>  //change time zone
+timedatectl // check time zone 
+timedatectl list-timezones // get list of time zone
+
+
 
 linix install git on ec2
 sudo su // to make you as root user to get all access
