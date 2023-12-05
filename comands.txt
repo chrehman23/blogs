@@ -183,6 +183,13 @@ Host personal
     User git
     IdentityFile ~/.ssh/personal
     IdentitiesOnly yes
+
+Host 139.185.41.162
+    HostName 139.185.41.162
+    User ubuntu
+    IdentityFile ~/.ssh/server
+    IdentitiesOnly yes
+
     
     
     
