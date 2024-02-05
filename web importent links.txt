@@ -25,3 +25,6 @@ https://coggle.it/diagram/YCzP1lR6dWF3jfas/t/ethereum-smart-contract-engineer-20
 
 //install nvm
 https://github.com/nvm-sh/nvm
+
+//all icons in for frontend framworks
+https://react-icons.github.io/react-icons/
