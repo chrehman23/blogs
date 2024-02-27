@@ -1,0 +1,1 @@
+geth removedb // remove all data if you have in eth folder.
