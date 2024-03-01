@@ -1,0 +1,85 @@
+#!/bin/bash // first line to mention the only you need to use bash terminal.
+bash FILE_NAME // to run your bash file
+chmode +x //to give permistaion to run the file
+pwd // to ger root path of the folder or file
+alias projects="cd /home/projects" // to set your oiwn commands
+
+# ***********************************************************************************************************************************
+#!/bin/bash
+echo "wellcome to bashing course"
+#commnts gose here
+<<comment
+this is my mutliline
+comments
+comment
+
+#Defie variables
+name="Abdur Rehman"
+age=25
+echo "My name is $name and age is $age."
+#**************************************************************
+#get and store bash commands value
+hostname=$(hostname)
+echo "your host name : $hostname"
+#**************************************************************
+#readonly variables
+readonly notchainable="unable to change"
+echo $notchainable
+#************************************************************
+#array
+list=(1 2 3 "strin value")
+echo "your second value is:${list[2]} and your all valus are ${list[*]} and lenght of array is:${#list[*]}"
+#************************************************************
+#update array list
+list+=(1 2 "new list")
+echo "your second value is:${list[2]} and your all valus are ${list[*]} and lenght of array is:${#list[*]}"
+#**************************************************************
+#User inputs
+read -p "Ente youar name: " name
+echo "welcome back $name"
+#*************************************************************
+#math oprations
+x=10
+y=2
+let res=$x*$y
+#only let is importent to use math funations or use can use them as (()) if they are in string the use $(())
+echo "Result is $res"
+
+****************************************************************************************************************************************************
+//create user
+#!/bin/bash
+
+read -p "Enter name: " name
+read -p "Enter age: " age
+read -p "Enter father: " father_name
+
+# Construct JSON object
+json_data="{\"name\": \"$name\", \"age\": \"$age\", \"father_name\": \"$father_name\"}"
+
+# Write JSON object to file
+echo "$json_data" > user.json
+
+echo "User data has been saved to user.json"
+
+*****************************************************************************************************************************************************
+echo "**********************"
+echo "Your firt argument is $1"
+echo "Your second argument is $2"
+echo "all values $@"
+echo "lenght o fall values $#"
+echo "Last command is $? if it return 0 then it means privous command is runing fine"
+function echocommand() {
+echo "wellcome echo $1 and $2"
+
+*******************************************************************************************************************************************************
+#geeting files
+file="names.txt"
+for name in $(cat $file)
+do
+        echo "Your name is: $name"
+        sleep 2s
+done
+}
+
+
+
