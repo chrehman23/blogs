@@ -28,5 +28,8 @@ docker login
   docker compose up // this will run your all container mention in the docker-compose.yml file with the root folder name
     
   
-  
+
+#docker install vim editor
+apt-get update
+apt-get install vim
   
