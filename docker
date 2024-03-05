@@ -1,0 +1,32 @@
+docker run -it ubuntu // -it is interactive key to go inside the container
+docker container ls // to get runing containers list on terminal
+docker stop CONTAINER_NAME // To stop the container 
+docker start CONTAINER_NAME // To start the container
+docker exec  CONTAINER_NAME ls // this ls command will run inside the container. If you need to run any command inside the particuler containe you can use the exec to run that command after the container name you can writ your command
+docker exec -it CONTAINER_NAME bash // Buy this command you wil go into the runing container
+docker images // get all downloaded images 
+docker build -t node-server . //To create docker image . Dot means your docker file is int he same folder
+
+
+
+
+
+
+
+docker pull CONTAINER_NAME // This will push the docker images localy but will not run this image in container
+docker push CONTAINER_NAME // Tis will push your docker image builed buy you before the make sure you have loged into your account.
+docker login
+  
+
+
+
+
+  -p OUTER_PORT:INER_PORT // This command is use to expose the ports of the application
+  -e PORT=4000 // -e can be use to add enverment variables to the application
+
+
+  docker compose up // this will run your all container mention in the docker-compose.yml file with the root folder name
+    
+  
+  
+  
