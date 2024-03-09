@@ -1,0 +1,2 @@
+wsl -l -v //list all install things
+wsl --unregister Ubuntu // To uninstall your isntalled things
