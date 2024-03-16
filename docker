@@ -7,7 +7,7 @@ docker exec -it CONTAINER_NAME bash // Buy this command you wil go into the runi
 docker images // get all downloaded images 
 docker build -t node-server . //To create docker image . Dot means your docker file is int he same folder
 
-
+docker rm $(docker container ls -aq) // This will remove all containers but make sure before runing this to stop all containers
 
 
 
