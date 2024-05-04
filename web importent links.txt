@@ -31,3 +31,6 @@ https://github.com/nvm-sh/nvm
 
 //all icons in for frontend framworks
 https://react-icons.github.io/react-icons/
+
+//importent web pages desgin
+https://github.com/HoanghoDev
