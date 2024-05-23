@@ -1,0 +1,8 @@
+update portfolio website
+
+add moralis exprience
+aws kinesis // for loging 
+microsoft login with azur
+meta transactions
+signature verification 
+
