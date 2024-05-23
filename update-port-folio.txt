@@ -5,4 +5,5 @@ aws kinesis // for loging
 microsoft login with azur
 meta transactions
 signature verification 
+quicknode and infura moralis
 
