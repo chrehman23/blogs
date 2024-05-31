@@ -7,3 +7,5 @@ meta transactions
 signature verification 
 quicknode and infura moralis
 
+
+store user information like ipAddress , location and OS to backend
