@@ -2,7 +2,9 @@ update portfolio website
 
 add moralis exprience
 aws kinesis // for loging 
+
 Grafana open source software enables you to query, visualize, alert on, and explore your metrics, logs, and traces wherever they are stored. Grafana
+SonarCloud is free for open source projects and has a usage-based pricing model for private projects. SonarQube is a self-managed solution that you can install on your own servers or in a self-managed cloud environment.
 
 microsoft login with azur
 meta transactions
