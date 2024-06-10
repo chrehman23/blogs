@@ -19,4 +19,13 @@ blocking ip on time control request if more then max time
 Transfer encrypted data on ervery api to make sure to no one know what kind of data is going to transfer in api.
 
 
+Advanced Encryption Standard (AES) for API Data Transfer:
+We have integrated AES encryption to secure all data transferred through our APIs. This ensures that sensitive information remains encrypted and protected from unauthorized access during transit.
+
+Benefits of Using Advanced Encryption Standard (AES)
+Security: AES is widely regarded as one of the most secure encryption algorithms and is used globally for encrypting sensitive data.
+Performance: AES is efficient and can handle large volumes of data with minimal performance overhead.
+Flexibility: It supports different key lengths (128, 192, and 256 bits), allowing us to choose the appropriate level of security based on our needs.
+
+
 
