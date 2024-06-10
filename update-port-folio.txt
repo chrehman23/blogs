@@ -2,6 +2,8 @@ update portfolio website
 
 add moralis exprience
 aws kinesis // for loging 
+Grafana open source software enables you to query, visualize, alert on, and explore your metrics, logs, and traces wherever they are stored. Grafana
+
 microsoft login with azur
 meta transactions
 signature verification 
@@ -13,4 +15,6 @@ store user information like ipAddress , location and OS to backend
 blocking ip on time control request if more then max time
 
 Transfer encrypted data on ervery api to make sure to no one know what kind of data is going to transfer in api.
+
+
 
