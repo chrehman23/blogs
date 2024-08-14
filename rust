@@ -1,1 +1,12 @@
 https://beta.solpg.io/ //for solana online project making
+
+
+
+rustc file.rs  //To make build of program
+./file //to run file after build
+cargo new package_name //This one will create new project.
+cargo run //This need to run in root folder of project this will make build and run your project.
+https://replit.com //website use for online coding.
+
+#[allow(dead_code)] //this will use in telling rust that is code is not use able but we need next
+fromat!("") // this can format things
