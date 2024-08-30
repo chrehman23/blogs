@@ -1,0 +1,76 @@
+run docker container onlocal
+docker run --name redis -p 6379:6379 -d redis
+
+
+REDIS_USERNAME=""
+REDIS_PASSWORD=""
+REDIS_HOST="127.0.0.1"
+REDIS_PORT="6379"
+
+
+
+import { Injectable } from '@nestjs/common';
+import { createClient } from 'redis';
+import RedisStore from 'connect-redis';
+import { redisConfig } from './redis.config';
+import { Logger } from '../../logger/logger';
+
+@Injectable()
+export class RedisService {
+  private readonly redisClient: any;
+  private readonly redisStore: RedisStore;
+
+  constructor() {
+    this.redisClient = createClient({
+      username: redisConfig.username,
+      password: redisConfig.password,
+      socket: {
+        host: redisConfig.host,
+        port: redisConfig.port,
+      },
+    });
+    this.redisClient
+      .connect()
+      .then(() => Logger.log('Redis', 'connected'))
+      .catch((err) =>
+        Logger.error('Redis', `Unable to connect REDIS. Error: ${err.message}`),
+      );
+    this.redisStore = new RedisStore({
+      client: this.redisClient,
+      prefix: `finstreet-${redisConfig.ENVIRONMENT}:`,
+    });
+  }
+
+  async get(key: string): Promise<any> {
+    try {
+      const value = await this.redisClient.get(key);
+      return JSON.parse(value);
+    } catch (error) {
+      Logger.error('Redis-Get', error.message);
+    }
+  }
+
+  async set(key: string, value: any): Promise<boolean> {
+    try {
+      await this.redisClient.set(key, JSON.stringify(value));
+      return true;
+    } catch (error) {
+      Logger.error('Redis-Set', error.message);
+      return false;
+    }
+  }
+
+  async delete(key: string): Promise<boolean> {
+    try {
+      await this.redisClient.del(key);
+      return true;
+    } catch (error) {
+      Logger.error('Redis-Delete', error.message);
+      return false;
+    }
+  }
+
+  getSessionStore(): RedisStore {
+    return this.redisStore;
+  }
+}
