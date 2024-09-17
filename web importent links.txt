@@ -38,6 +38,9 @@ https://github.com/HoanghoDev
 //making documents for any webstie
 https://www.spreading.ai/
 
+
+//shop figma design
+https://www.figma.com/community/file/1216698613875563555
 ****************************************************blockchain**********************************
 https://louper.dev/ //for dimond proxy contracts loaders
 
