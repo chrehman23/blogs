@@ -34,4 +34,8 @@ having good exprice in npm packages. ui packages to mantain all ui component thr
 hardhat,trufall , foundary
 
 
+ASRS Solutions Defined and Benefits
+At their core, automated storage and retrieval systems, or ASRS for short, are computer-controlled inventory management systems that automate the storage and retrieval of unit loads for picking, packing, and shipping.
+
+
 
