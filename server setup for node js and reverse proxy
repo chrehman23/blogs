@@ -14,6 +14,7 @@ pwd // this will give you root path of file or folder.
 sudo apt update  //on new server only
 sudo apt update && sudo apt upgrade //to update both
 sudo apt install git // built in commands to install git
+git config --global core.editor vim // update editor
 Note:
 Ubuntu/Debian: sudo apt install git
 CentOS/Fedora: sudo dnf install git or sudo yum install git
