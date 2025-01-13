@@ -44,6 +44,8 @@ sudo ufw allow ssh // to activate  ssh on server
 sudo ufw allow 'Nginx Full' // to allow all posible ports on server
 sudo ufw status // to check ports on server
 sudo ufw allow 3000 // to enable port 3000 on server but its not good on 
+sudo ufw allow 3000/tcp
+sudo ufw reload // to reload
 sudo ufw deny 3000 // to disable port on server 
 
 
