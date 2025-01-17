@@ -38,4 +38,10 @@ ASRS Solutions Defined and Benefits
 At their core, automated storage and retrieval systems, or ASRS for short, are computer-controlled inventory management systems that automate the storage and retrieval of unit loads for picking, packing, and shipping.
 
 
+AI
+groq cloud api with ai with chat apps
+huggingface useing models to automate works and build chat bots. 
+ollama models and with flask api to read docuemnts and ask qustions and queryies 
+chroma db to query relivent inforamtion only based on query. 
+
 
