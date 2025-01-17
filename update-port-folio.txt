@@ -43,5 +43,6 @@ groq cloud api with ai with chat apps
 huggingface useing models to automate works and build chat bots. 
 ollama models and with flask api to read docuemnts and ask qustions and queryies 
 chroma db to query relivent inforamtion only based on query. 
+Retrieval Augmented Generation (RAG) | Embedding Model, Vector Database, LangChain, LLM
 
 
