@@ -44,6 +44,8 @@ sudo apt-get autoremove // to clean all after removing the package form ubanto
 ***************pm2 installation for global *******************
 sudo npm install -g pm2 //download pm2
 pm2 start npm --name "host" -- run dev //to run npm comand form pm2
+pm2 start npm --name "nuxt-app" -- start
+
 pm2 save //to save your pm2 list
 pm2 startup //to start your pm2 status and it will give you comand to run on server report 
 sudo reboot //this will restart your server
