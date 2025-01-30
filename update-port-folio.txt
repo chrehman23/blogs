@@ -46,5 +46,6 @@ chroma db to query relivent inforamtion only based on query.
 Retrieval Augmented Generation (RAG) | Embedding Model, Vector Database, LangChain, LLM
 LangFlow for making and testing llm model work flow only for development 
 llama deepseek-r1 with 7B paramertes
+https://lmstudio.ai/ // for runing local models.
 
 
