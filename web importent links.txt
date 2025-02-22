@@ -40,6 +40,9 @@ https://www.spreading.ai/
 
 
 //shop figma design
+
+https://codesandbox.io/p/sandbox/yup2o?file=%2Fsrc%2FApp.js%3A1%2C1-57%2C1 // add to skills sections
+
 https://www.figma.com/community/file/1216698613875563555
 ****************************************************blockchain**********************************
 https://louper.dev/ //for dimond proxy contracts loaders
