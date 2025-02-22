@@ -47,3 +47,6 @@ https://www.figma.com/community/file/1216698613875563555
 ****************************************************blockchain**********************************
 https://louper.dev/ //for dimond proxy contracts loaders
 
+//full domain conneting to ec2 server 
+https://www.youtube.com/watch?v=yhiuV6cqkNs importent
+
