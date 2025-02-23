@@ -63,6 +63,10 @@ sudo ln -s ../sites-available/FILE_NAME //linking file
 ********************************************************************
  Test the Nginx configuration for any syntax errors:
 sudo nginx -t
+sudo ufw allow 22/tcp //for ssh enabled
+sudo vim /etc/ssh/ssh_config   // make sure  anable port 22 uncomit
+
+
  ******************************************************************
  // redirect file code 
 **************************************************************
