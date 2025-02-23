@@ -60,11 +60,16 @@ sudo service nginx restart // to restart it
 cd /etc/nginx/nginx.conf // go to this folder
 cd sites-enabled //linking
 sudo ln -s ../sites-available/FILE_NAME //linking file
+sudo ln -s /etc/nginx/sites-available/DOMAIN_FILE_NAME /etc/nginx/sites-enabled/ varified lines 
 ********************************************************************
  Test the Nginx configuration for any syntax errors:
 sudo nginx -t
 sudo ufw allow 22/tcp //for ssh enabled
-sudo vim /etc/ssh/ssh_config   // make sure  anable port 22 uncomit
+sudo vim /etc/ssh/ssh_config   // make sure  anable port 22 uncomit 
+
+************for react app************
+sudo mv build /var/www/APP_NAME ///move your build in public folders
+
 
 
  ******************************************************************
