@@ -70,7 +70,7 @@ sudo vim /etc/ssh/ssh_config   // make sure  anable port 22 uncomit
 ************for react app************
 sudo mv build /var/www/APP_NAME ///move your build in public folders
 npm run build //make build
-sudo mv build /var/www/APP_folder_name // if you have meny react files
+sudo mv build/* /var/www/app/APP_FOLDER_NAME  // if you have meny react files
 sudo systemctl reload nginx
 
 
