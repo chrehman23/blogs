@@ -80,6 +80,10 @@ nginx resting and checking status
 sudo systemctl restart nginx // to restart engine
 sudo systemctl status nginx // to check status of engin
 
+//nano termianl 
+control + O and then press enter  // for saving file 
+control + x // to exit after saving file.
+
 
 
 
