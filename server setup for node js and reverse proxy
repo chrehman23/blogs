@@ -51,6 +51,7 @@ pm2 startup //to start your pm2 status and it will give you comand to run on ser
 sudo reboot //this will restart your server
 pm2 resurrect //this will restore your pm2 list
 pm2 startup //this will start your all processes
+pm2 monit // to view live status of pm2
 
  
 **************** install nginx ****************
