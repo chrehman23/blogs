@@ -47,6 +47,8 @@ sudo ufw allow 3000 // to enable port 3000 on server but its not good on
 sudo ufw allow 3000/tcp
 sudo ufw reload // to reload
 sudo ufw deny 3000 // to disable port on server 
+sudo ufw delete allow 3000 //delete
+
 
 
 instling ssl to linix server
