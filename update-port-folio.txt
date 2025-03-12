@@ -49,3 +49,6 @@ llama deepseek-r1 with 7B paramertes
 https://lmstudio.ai/ // for runing local models.
 
 
+///google analyst to view trafic live. and seo and trafic monitization
+
+
