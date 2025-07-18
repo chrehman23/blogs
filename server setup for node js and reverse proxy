@@ -53,6 +53,14 @@ pm2 resurrect //this will restore your pm2 list
 pm2 startup //this will start your all processes
 pm2 monit // to view live status of pm2
 
+*********importent*******
+applications ports 
+80 port to access server 
+443 port for https 
+
+following port are allwasy need to add in inbound rules to access application 
+
+
  
 **************** install nginx ****************
 sudo apt install nginx //on firtst time 
