@@ -58,6 +58,8 @@ sudo apt install python3-certbot-nginx // then install python on your web server
 sudo certbot --nginx -d test.dex.globalfansy.com -d www.test.dex.globalfansy.com // now you can install ssl vertificatino on you web server 
                                  after that add your email address to get email on expiration date
 becarefull will entring the detail after your email address and every time choose second option
+nslookup myvirtual.store //check server connected or not. 
+
 
 
 
