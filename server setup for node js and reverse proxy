@@ -54,7 +54,8 @@ pm2 startup //this will start your all processes
 pm2 monit // to view live status of pm2
 
 *********importent*******
-applications ports 
+applications ports all needs to open.  
+22 port for ssh 
 80 port to access server 
 443 port for https 
 
