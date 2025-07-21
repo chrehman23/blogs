@@ -59,6 +59,13 @@ applications ports all needs to open inbound.
 80 port to access server 
 443 port for https 
 for outbound 22 port 80 433 53 ICMP are importent
+Click “Add Security Rule”:
+****************************************
+Direction: Egress
+Destination Type: CIDR
+CIDR Block: 0.0.0.0/0
+IP Protocol: All Protocols
+****************************************
 
 following port are allwasy need to add in inbound rules to access application 
 
