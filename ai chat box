@@ -1,0 +1,82 @@
+import React, { useState, useEffect, useRef } from 'react';
+
+export default function AIChat() {
+  const [selection, setSelection] = useState('');
+  const [popupPosition, setPopupPosition] = useState(null);
+  const [prompt, setPrompt] = useState('');
+  const [aiResponse, setAIResponse] = useState('');
+  const popupRef = useRef(null);
+
+  useEffect(() => {
+    const handleMouseUp = () => {
+      const text = window.getSelection().toString().trim();
+      if (text.length > 0) {
+        const range = window.getSelection().getRangeAt(0);
+        const rects = range.getClientRects();
+        const rect = rects[rects.length - 1]; // Get end of selection
+
+        setSelection(text);
+        setPopupPosition({
+          top: rect.top + window.scrollY - 18,
+          left: rect.right + window.scrollX + 5,
+        });
+      } else {
+        setSelection('');
+        setPopupPosition(null);
+        setPrompt('');
+        setAIResponse('');
+      }
+    };
+
+    const handleClickOutside = e => {
+      if (popupRef.current && !popupRef.current.contains(e.target)) {
+        setSelection('');
+        setPopupPosition(null);
+        setPrompt('');
+        setAIResponse('');
+      }
+    };
+
+    document.addEventListener('mouseup', handleMouseUp);
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mouseup', handleMouseUp);
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+  const askAI = async () => {
+    alert('working fine');
+    const fullPrompt = `Answer this question based on this text: "${selection}". Question: ${prompt}`;
+    const res = await fetch('/api/ask-ai', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ prompt: fullPrompt }),
+    });
+    const data = await res.json();
+    setAIResponse(data.answer);
+  };
+
+  return (
+    <div>
+      {popupPosition && (
+        <div
+          ref={popupRef}
+          style={{
+            position: 'absolute',
+            top: popupPosition.top,
+            left: popupPosition.left,
+            zIndex: 1000,
+            backgroundColor: '#fff',
+            padding: '5px',
+            borderRadius: '50%',
+            cursor: 'pointer',
+            boxShadow: '0 2px 8px rgba(0,0,0,0.2)',
+          }}
+          title='Ask AI about this'
+          onClick={askAI}
+        ></div>
+      )}
+    </div>
+  );
+}
