@@ -86,10 +86,28 @@ sudo ufw allow 22/tcp //for ssh enabled
 sudo vim /etc/ssh/ssh_config   // make sure  anable port 22 uncomit 
 
 ************for react app************
+sudo rm -rf /var/www/app/*
 sudo mv build /var/www/APP_NAME ///move your build in public folders
 npm run build //make build
 sudo mv build/* /var/www/app/APP_FOLDER_NAME  // if you have meny react files
 sudo systemctl reload nginx
+
+************************************
+//if youare getting forbiden error 
+sudo setenforce 0
+sudo chcon -R -t httpd_sys_content_t /var/www/app
+sudo semanage fcontext -a -t httpd_sys_content_t "/var/www/app(/.*)?"
+sudo setenforce 1 /// importent to run it back.
+sudo systemctl restart nginx update all chagnes will restart
+
+//if not installed 
+sudo yum install policycoreutils-python-utils
+# Or on Debian/Ubuntu:
+sudo apt install policycoreutils-python-utils
+
+
+
+***********************************
 
 
  ******************************************************************
