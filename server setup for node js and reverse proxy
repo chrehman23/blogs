@@ -51,9 +51,13 @@ pm2 set pm2-logrotate:retain 7       //# keep 7 old logs
 
 
 &**************pm2 logsing *************
+df -h //check space of the server
+sudo rm -rf /tmp/* //log removing
+sudo rm -rf /var/tmp/*
 pm2 flush //PM2 has a built-in command to truncate all logs:
 rm ~/.pm2/logs/*.log //if you want delete
 rm ~/.pm2/logs/app-name-*.log //for sapifice app delete
+sudo journalctl --vacuum-time=7d //If using systemd, logs are in /var/log/journal/:
 
 
 pm2 save //to save your pm2 list
