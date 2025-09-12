@@ -45,6 +45,16 @@ sudo apt-get autoremove // to clean all after removing the package form ubanto
 sudo npm install -g pm2 //download pm2
 pm2 start npm --name "host" -- run dev //to run npm comand form pm2
 pm2 start npm --name "nuxt-app" -- start
+pm2 install pm2-logrotate // to install pm2 log remvoer
+pm2 set pm2-logrotate:max_size 10M   //# rotate after 10MB
+pm2 set pm2-logrotate:retain 7       //# keep 7 old logs
+
+
+&**************pm2 logsing *************
+pm2 flush //PM2 has a built-in command to truncate all logs:
+rm ~/.pm2/logs/*.log //if you want delete
+rm ~/.pm2/logs/app-name-*.log //for sapifice app delete
+
 
 pm2 save //to save your pm2 list
 pm2 startup //to start your pm2 status and it will give you comand to run on server report 
