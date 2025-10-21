@@ -168,6 +168,9 @@ listen 80;
 }
 
 ************************************************************************
+//for showing localhost as domain link 
+C:\Windows\System32\drivers\etc 
+ipconfig /flushdns
 
  
  
