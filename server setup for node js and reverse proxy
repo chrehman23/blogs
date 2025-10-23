@@ -172,5 +172,12 @@ listen 80;
 C:\Windows\System32\drivers\etc 
 ipconfig /flushdns
 
+//for local package developemnt 
+npm install -g yalc
+yalc publish
+
+# in your main project
+yalc add your-package
+npm install
  
  
