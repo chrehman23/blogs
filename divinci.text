@@ -1,2 +1,5 @@
 alt + s // add new node 
 shift + h //check affected color in fusion 
+control + y // to add version 
+control + b // to change versions one by one.
+
