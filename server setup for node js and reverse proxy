@@ -59,6 +59,10 @@ rm ~/.pm2/logs/*.log //if you want delete
 rm ~/.pm2/logs/app-name-*.log //for sapifice app delete
 sudo journalctl --vacuum-time=7d //If using systemd, logs are in /var/log/journal/:
 
+//if pm2 rote is changed
+ps aux | grep pm2 ///to get all running node apps.
+PM2_HOME="/home/opc/.pm2" pm2 list ///check pm2 status running
+
 
 pm2 save //to save your pm2 list
 pm2 startup //to start your pm2 status and it will give you comand to run on server report 
