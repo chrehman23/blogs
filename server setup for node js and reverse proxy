@@ -62,6 +62,11 @@ sudo journalctl --vacuum-time=7d //If using systemd, logs are in /var/log/journa
 //if pm2 rote is changed
 ps aux | grep pm2 ///to get all running node apps.
 PM2_HOME="/home/opc/.pm2" pm2 list ///check pm2 status running
+//getting the all ports
+sudo lsof -i :3001 // or the next command 
+sudo netstat -tulpn | grep :3001 // use this if you want to get all the list
+sudo lsof -i :3001 // check the list if its removed
+sudo kill PID //  use this if you want to remove the runing app. 
 
 
 pm2 save //to save your pm2 list
