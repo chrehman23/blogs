@@ -25,6 +25,7 @@ git --version // to check git installed or not
 ************* vim  editor*******************
 press i for edit mode and esc for excit mode then wq thne press enter
 shift + :wq
+:q! //if you not open with sudo
 **********remvoving yarn packeage **************
 sudo apt remove cmdtest //to remove yarn package
 sudo npm install -g yarn //you can add yarn with npm ager adding npm
