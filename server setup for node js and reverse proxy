@@ -192,7 +192,7 @@ npm install
 
 
 
-
+df -h // to check space of server 
 On Oracle Linux (RHEL/CentOS based):
 Bash
 sudo dnf clean all
