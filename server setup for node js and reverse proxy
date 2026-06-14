@@ -189,5 +189,20 @@ yalc publish
 # in your main project
 yalc add your-package
 npm install
+
+
+
+
+On Oracle Linux (RHEL/CentOS based):
+Bash
+sudo dnf clean all
+sudo dnf update oracle-cloud-agent -y
+sudo systemctl restart oracle-cloud-agent
+
+On Ubuntu/Debian:
+Bash
+sudo apt-get update
+sudo apt-get install --only-upgrade oracle-cloud-agent -y
+sudo systemctl restart oracle-cloud-agent
  
  
